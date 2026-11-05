@@ -1,7 +1,11 @@
+
 name: Terraform CI Pipeline
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   terraform:
